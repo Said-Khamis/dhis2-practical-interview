@@ -14,7 +14,7 @@ class SplashScreenView extends GetView<SplashScreenController> {
         body: GetBuilder(
         init: controller,
         builder: (controller) {
-          return  Container(
+          return Container(
               width: Get.mediaQuery.size.width,
               height: Get.mediaQuery.size.height,
               decoration: const BoxDecoration(
@@ -26,7 +26,7 @@ class SplashScreenView extends GetView<SplashScreenController> {
                    fit: BoxFit.cover
                  )
               ),
-              child: Column(
+              child: const Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,

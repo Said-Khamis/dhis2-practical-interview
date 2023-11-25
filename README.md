@@ -1,16 +1,16 @@
-# weatherapp
+# DHIS 2 PRACTICAL WEATHER APP
 
-A new Flutter project.
+HOW TO EXECUTE APP APP
 
-## Getting Started
+1. DOWNLOAD AN APK FILE GENERATE FROM testingapk FOLDER
+2. THEN INSTALL THE APK INTO YOUR ANDROID DEVICE
+3. THEN OPEN APP AFTER COMPLETING INSTALLATION
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+DELIVERABLES:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+a) I have a handle API requests using GetConnect from GetX state management package.
+   I  used GET request in asynchronous calling on the OpenWeather API where the 
+   error where handle by using try catch block which throw socket exceptions ( FetchDataException ).
+   The errors responses will be sent to user using SnackBar whenever something wrong was happening.
+   

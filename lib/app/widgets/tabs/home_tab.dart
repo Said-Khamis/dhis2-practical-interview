@@ -21,7 +21,7 @@ class HomeTab extends StatelessWidget {
         child: Scaffold(
             extendBodyBehindAppBar: true,
             appBar: AppBar(
-              title: HewaWidgetTabs(size: 20.0,widthSize: 70, heightSize: 25,),
+              title: HewaWidgetTabs(size: 20.0,widthSize: MediaQuery.of(context).size.width, heightSize: 25,),
               elevation: 0.0,
               centerTitle: true,
               backgroundColor: Colors.transparent,

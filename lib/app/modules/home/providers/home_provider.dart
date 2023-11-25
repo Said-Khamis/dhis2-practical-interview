@@ -1,8 +1,6 @@
 import 'dart:io';
-
 import 'package:get/get.dart';
 import 'package:weatherapp/app/common/config.dart';
-
 import '../../../common/api_exceptions.dart';
 
 class HomeProvider extends GetConnect {
@@ -36,8 +34,7 @@ class HomeProvider extends GetConnect {
         throw UnauthorisedException(response);
       case 500:
       default:
-        throw FetchDataException(
-            'Error occured while Communication with Server with StatusCode : ${response?.statusCode}');
+        throw FetchDataException('Error occured while Communication with Server with StatusCode : ${response?.statusCode}');
     }
   }
 

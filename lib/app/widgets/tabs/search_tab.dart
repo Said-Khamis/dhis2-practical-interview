@@ -4,14 +4,12 @@ import 'package:weatherapp/app/modules/home/controllers/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:weatherapp/app/modules/home/controllers/result_controller.dart';
 import 'package:weatherapp/app/widgets/hewa.dart';
-
 import '../hewa_tabs.dart';
 
 class SearchTab extends GetView<ResultController> {
    SearchTab({Key? key}) : super(key: key);
 
   final _formSearch = GlobalKey<FormState>();
-
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +20,7 @@ class SearchTab extends GetView<ResultController> {
         child: Scaffold(
           extendBodyBehindAppBar: true,
           appBar: AppBar(
-             title: HewaWidgetTabs(size: 20.0,widthSize: 70, heightSize: 25,),
+             title: HewaWidgetTabs(size: 20.0,widthSize: MediaQuery.of(context).size.width, heightSize: 25,),
              elevation: 0.0,
              centerTitle: true,
              backgroundColor: Colors.transparent,

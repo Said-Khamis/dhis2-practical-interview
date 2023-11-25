@@ -10,7 +10,7 @@ void main() {
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Weather App Ellipsi",
+      title: "Weather App DHIS2",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
     ),

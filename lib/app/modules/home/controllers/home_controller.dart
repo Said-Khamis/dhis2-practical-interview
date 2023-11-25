@@ -26,7 +26,6 @@ class HomeController extends GetxController {
   ];
 
   void onItemTaped(int index){
-
     if(!isManuallyTapped.value){
       if(index != 2){
         selectedIndex.value = index;
@@ -55,17 +54,13 @@ class HomeController extends GetxController {
         weatherData.value = WeatherData.fromJson(value);
       }
       isLoading.value = false;
-
     }, onError: (error){
-
       Get.snackbar("Message", error.toString());
-
       isLoading.value = false;
-
     }).whenComplete(() {
-
       isLoading.value = false;
     });
+
   }
 
   @override
